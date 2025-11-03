@@ -84,6 +84,22 @@ st.set_page_config(
 # 모바일 최적화 CSS
 st.markdown("""
 <style>
+    /* 전체 글씨 크기 조정 */
+    .stChatMessage {
+        font-size: 0.9em;
+        padding: 0.5rem 1rem;
+    }
+    
+    /* 제목 크기 조정 */
+    h1 {
+        font-size: 1.8rem !important;
+    }
+    
+    /* 설명 글씨 크기 */
+    .stMarkdown p {
+        font-size: 0.9em;
+    }
+    
     /* 모바일 최적화 */
     .stChatFloatingInputContainer {
         bottom: 20px;
@@ -92,6 +108,7 @@ st.markdown("""
     /* 입력창 크기 조정 */
     .stChatInputContainer {
         padding: 1rem;
+        font-size: 0.9em;
     }
     
     /* 모바일에서 여백 조정 */
@@ -100,11 +117,6 @@ st.markdown("""
             padding-top: 2rem;
             padding-bottom: 2rem;
         }
-    }
-    
-    /* 메시지 말풍선 최적화 */
-    .stChatMessage {
-        padding: 0.5rem 1rem;
     }
 </style>
 """, unsafe_allow_html=True)
