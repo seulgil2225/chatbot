@@ -92,12 +92,12 @@ st.markdown("""
     
     /* 제목 크기 조정 */
     h1 {
-        font-size: 1.8rem !important;
+        font-size: 1.5rem !important;
     }
     
     /* 설명 글씨 크기 */
     .stMarkdown p {
-        font-size: 0.9em;
+        font-size: 0.85em;
     }
     
     /* 모바일 최적화 */
@@ -122,8 +122,8 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # 제목 및 설명
-st.title("💻 mySUNI 총무 챗봇")
-st.markdown("**임시출입증, 주차등록 등 총무 관련 문의사항을 편하게 질문하세요!**")
+st.markdown("<h1 style='font-size: 1.5rem;'>💻 mySUNI 총무 챗봇</h1>", unsafe_allow_html=True)
+st.markdown("<p style='font-size: 0.9rem;'><strong>임시출입증, 주차등록 등 총무 관련 문의사항을 편하게 질문하세요!</strong></p>", unsafe_allow_html=True)
 st.divider()
 
 # 세션 상태 초기화
